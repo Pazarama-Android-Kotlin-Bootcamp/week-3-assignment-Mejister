@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".detail.MovieDetailFragment">
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/CardView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:cardUseCompatPadding="true"
+       android:padding="15dp"
+       android:layout_marginVertical="15dp"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:cardCornerRadius="8dp">
+
+       <LinearLayout
+
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:padding="15dp">
+
+           <TextView
+               android:id="@+id/theMovieName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:layout_marginTop="10dp"
+               android:text="name"/>
+
+           <TextView
+               android:id="@+id/theMovieGenre"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:layout_marginTop="10dp"
+               android:text="genre"/>
+
+           <TextView
+               android:id="@+id/theMovieDescrip"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:text="decrip"/>
+
+           <TextView
+               android:id="@+id/theMR"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:text="rating"/>
+
+       </LinearLayout>
+
+   </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
